@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:id="@+id/myLayout"
+        android:weightSum="1.5"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            app:srcCompat="@mipmap/ic_launcher"
+            android:id="@+id/menuPhotoView"
+            android:layout_weight="0.50"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="false" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/mycustumTV"
+            android:textSize="24sp"
+            android:textColor="@android:color/background_dark"
+            android:layout_weight="0.93"
+            android:gravity="center"
+            android:fontFamily="casual" />
+
+    </LinearLayout>
+</LinearLayout>

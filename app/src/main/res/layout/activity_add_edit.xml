@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_edit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.omernaim.librarymovie.AddEditActivity"
+    android:orientation="vertical"
+    android:weightSum="5"
+    android:background="@drawable/addedit">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.08">
+
+        <TextView
+            android:text="Subject:"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/subjTV"
+            android:layout_weight="0.39"
+            android:elevation="12dp"
+            android:accessibilityLiveRegion="none"
+            android:autoText="false"
+            android:shadowColor="@android:color/darker_gray"
+            android:textColor="@android:color/background_dark" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/subjET"
+            android:layout_weight="0.24"
+            android:hint="Write a suject.." />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:weightSum="1.5"
+        android:layout_weight="1.5"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:layout_weight="1.50">
+
+            <TextView
+                android:text="Body:"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:id="@+id/bodyTV"
+                android:elevation="12dp"
+                android:textColor="@android:color/background_dark" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:id="@+id/bodyET"
+                android:hint="Write a body.."
+                android:inputType="textMultiLine" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_weight="1.94"
+        android:layout_height="0dp"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:weightSum="1"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="URL:"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:id="@+id/URLTV"
+                android:layout_weight="0.70"
+                android:elevation="12dp"
+                android:textColor="@android:color/background_dark" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/urlET"
+                android:layout_weight="0.04"
+                android:hint="type a URL.." />
+
+            <Button
+                android:text="SHOW"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/showUrlBtn"
+                android:layout_weight="0.04"
+                android:textColor="@android:color/background_dark"
+                android:background="@color/colorPrimary" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:id="@+id/imageView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="true">
+
+        <Button
+            android:text="OK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/okBtn"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="Cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cancelBtn"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout
+    >
